@@ -10,7 +10,7 @@
 
     ext.my_first_block = function() {
         // Code that gets executed when the block is run
-        return Math.floor(Math.random()*11);
+        return Math.floor(Math.random());
     };
 
     // Block and block menu descriptions
