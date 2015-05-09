@@ -8,7 +8,7 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function() {
+    ext.random = function() {
         // Code that gets executed when the block is run
         return Math.floor(Math.random());
     };
@@ -17,7 +17,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'random number', 'my_first_block'],
+            ['r', 'random number between 1 and 10', 'random'],
         ]
     };
 
