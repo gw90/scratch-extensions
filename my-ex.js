@@ -8,7 +8,7 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function() {
+    ext.my_first_block = function(callback) {
         // Code that gets executed when the block is run
         callback(Math.floor(Math.random()*11));
     };
