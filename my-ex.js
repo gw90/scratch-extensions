@@ -17,7 +17,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            [' ', 'random number', 'my_first_block'],
+            ['r', 'random number', 'my_first_block'],
         ]
     };
 
