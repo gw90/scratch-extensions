@@ -8,16 +8,15 @@
         return {status: 2, msg: 'Ready'};
     };
     
-    ext.report_n = function(str1, str2) {
-        // Code that gets executed when the block is run
-        return str1 + "" + str2;
+    ext.power = function(base, exponent) {
+        return Math.pow(base, exponent);
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'string add %s and %s', 'report_n', "Hello ", "World"]
+            ['r', '%n ^ %n', 'power', 2, 3],
         ]
     };
 
