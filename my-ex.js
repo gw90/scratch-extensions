@@ -11,12 +11,22 @@
     ext.power = function(base, exponent) {
         return Math.pow(base, exponent);
     };
+    
+    ext.inf = function() {
+        return Infinity;
+    };
+    
+    ext.neg_inf = function() {
+        return -Infinity;
+    };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
             ['r', '%n ^ %n', 'power', 2, 3],
+            ['r', 'infinity', 'inf',],
+            ['r', 'negative infinity', 'neg_inf'],
         ]
     };
 
