@@ -19,6 +19,10 @@
     ext.neg_inf = function() {
         return -Infinity;
     };
+    
+    ext.inf_b = function(num) {
+        return isFinite(num);
+    };
 
     // Block and block menu descriptions
     var descriptor = {
@@ -27,6 +31,7 @@
             ['r', '%n ^ %n', 'power', 2, 3],
             ['r', 'infinity', 'inf',],
             ['r', 'negative infinity', 'neg_inf'],
+            ['b', 'is %n finite?', 'inf_b'],
         ]
     };
 
