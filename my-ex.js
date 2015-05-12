@@ -22,4 +22,6 @@
 
     // Register the extension
     ScratchExtensions.register('My extension', descriptor, ext);
+    
+    url:"https://gw90.github.io/scratch-extensions/my-ex.js";
 })({});
