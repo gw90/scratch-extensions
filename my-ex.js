@@ -17,7 +17,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'strinf add %s and %s', 'report_n', "Hello ", "World"]
+            ['r', 'string add %s and %s', 'report_n', "Hello ", "World"]
         ]
     };
 
