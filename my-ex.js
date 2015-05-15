@@ -32,6 +32,17 @@
         document.cookie=name+"="+value;
         //alert(name+"="+value);
     };
+    
+    ext.read_cookie = function(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    };
 
     // Block and block menu descriptions
     var descriptor = {
@@ -43,6 +54,7 @@
             ['b', '%n is finite?', 'inf_b'],
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
+            ['r', 'value of cookie with name:%s', 'read_cookie', 'hello'],
             
         ],
         url:'https://gw90.github.io/scratch-extensions/my-ex.js'
