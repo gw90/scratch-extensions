@@ -37,6 +37,7 @@
             ['r', 'negative infinity', 'neg_inf'],
             ['b', '%n is finite?', 'inf_b'],
             ['r', 'remainder of %n divided by %n', 'mod'],
+            ['r', 'pi', 'pi']
         ]
     };
 
