@@ -35,7 +35,7 @@
             ['r', '%n ^ %n', 'power', 2, 3],
             ['r', 'infinity', 'inf',],
             ['r', 'negative infinity', 'neg_inf'],
-            ['b', 'is %n finite?', 'inf_b'],
+            ['b', '%n is finite?', 'inf_b'],
             ['r', 'remainder of %n divided by %n', 'mod'],
         ]
     };
