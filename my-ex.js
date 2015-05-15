@@ -46,7 +46,7 @@
             
             
         ]
-        url: 'https://gw90.github.io/scratch-extensions/my-ex.js'
+        
     };
 
     // Register the extension
