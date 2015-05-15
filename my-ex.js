@@ -29,7 +29,8 @@
     };
     
     ext.set_cookie = function(name, value) {
-        document.cookie=name+"="+value;
+        //document.cookie=name+"="+value;
+        alert(name+"="+value);
     };
 
     // Block and block menu descriptions
