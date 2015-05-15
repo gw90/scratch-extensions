@@ -29,8 +29,8 @@
     };
     
     ext.set_cookie = function(name, value) {
-        //document.cookie=name+"="+value;
-        alert(name+"="+value);
+        document.cookie=name+"="+value;
+        //alert(name+"="+value);
     };
 
     // Block and block menu descriptions
@@ -45,7 +45,6 @@
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
             
         ]
-        url: 'https://gw90.github.io/scratch-extensions/my-ex.js'
     };
 
     // Register the extension
