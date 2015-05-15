@@ -44,7 +44,8 @@
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
             
-        ]
+        ],
+        url:'https://gw90.github.io/scratch-extensions/my-ex.js'
     };
 
     // Register the extension
