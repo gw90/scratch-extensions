@@ -53,8 +53,8 @@
         document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
     }
     
-    delCookie = function(name){
-        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    function delCookie(name) {
+    createCookie(name,"",-1);
     }
     
     ext.del_all_cookies = function(name){
