@@ -52,6 +52,13 @@
     ext.del_cookie = function(name){
         document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
     }
+    
+    ext.del_all_cookies = function(name){
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++){
+            ext.del_cookie(cookies[i].split("=")[0]);
+        }
+    }
 
     // Block and block menu descriptions
     var descriptor = {
@@ -64,6 +71,7 @@
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
             [' ', 'delete cookie with name:%s', 'del_cookie', 'hello'],
+            [' ', 'delete all cookies', 'del_all_cookie'],
             ['r', 'value of cookie with name:%s', 'read_cookie', 'hello'],
             
         ],
