@@ -53,10 +53,14 @@
         document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
     }
     
+    delCookie = function(name){
+        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    }
+    
     ext.del_all_cookies = function(name){
         var cookies = document.cookie.split(";");
         for (var i = 0; i < cookies.length; i++){
-            ext.del_cookie(cookies[i].split("=")[0]);
+            delCookie(cookies[i].split("=")[0]);
         }
     }
 
