@@ -48,6 +48,10 @@
         }
         return "";
     };
+    
+    ext.del_cookie = function(name){
+        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+    }
 
     // Block and block menu descriptions
     var descriptor = {
@@ -59,6 +63,7 @@
             ['b', '%n is finite?', 'inf_b'],
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
+            [' ', 'delete cookie with name:%s', 'del_cookie', 'hello'],
             ['r', 'value of cookie with name:%s', 'read_cookie', 'hello'],
             
         ],
