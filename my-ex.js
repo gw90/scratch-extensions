@@ -54,7 +54,7 @@
     }
     
     function delCookie(name) {
-    createCookie(name,"",-1);
+        createCookie(name,"",-1);
     }
     
     ext.del_all_cookies = function(name){
@@ -62,7 +62,7 @@
         for (var i = 0; i < cookies.length; i++){
             delCookie(cookies[i].split("=")[0]);
         }
-        //[' ', 'delete all cookies', 'del_all_cookie'],
+        //
     }
 
     // Block and block menu descriptions
@@ -77,6 +77,7 @@
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
             [' ', 'delete cookie with name:%s', 'del_cookie', 'hello'],
             ['r', 'value of cookie with name:%s', 'read_cookie', 'hello'],
+            [' ', 'delete all cookies', 'del_all_cookies'],
             
         ],
         url:'https://gw90.github.io/scratch-extensions/my-ex.js'
