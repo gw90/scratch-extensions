@@ -29,7 +29,7 @@
     };
     
     ext.set_cookie = function(name, value) {
-        document.cookie="firstname=John;expires=Wed, 18 Dec 2023 12:00:00 GMT";
+        document.cookie=name+"=John;expires=Wed, 18 Dec 2023 12:00:00 GMT";
         //document.cookie = name + "=" + value + "; Wed, 18 Dec 2023 12:00:00 GMT";
         //document.cookie=name+"="+value+"; expires=Thu, 18 Dec 2015 12:00:00 UTC;";
         //alert(name+"="+value);
