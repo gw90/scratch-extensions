@@ -62,6 +62,7 @@
         for (var i = 0; i < cookies.length; i++){
             delCookie(cookies[i].split("=")[0]);
         }
+        //[' ', 'delete all cookies', 'del_all_cookie'],
     }
 
     // Block and block menu descriptions
@@ -75,7 +76,6 @@
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
             [' ', 'delete cookie with name:%s', 'del_cookie', 'hello'],
-            [' ', 'delete all cookies', 'del_all_cookie'],
             ['r', 'value of cookie with name:%s', 'read_cookie', 'hello'],
             
         ],
