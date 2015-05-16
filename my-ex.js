@@ -29,11 +29,7 @@
     };
     
     ext.set_cookie = function(name, value) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires="+d.toUTCString();
-        alert(name + "=" + value + "; " + expires);
-        //document.cookie = name + "=" + value + "; " + expires;
+        document.cookie = name + "=" + value + "; Wed, 18 Dec 2023 12:00:00 GMT";
         //document.cookie=name+"="+value+"; expires=Thu, 18 Dec 2015 12:00:00 UTC;";
         //alert(name+"="+value);
     };
