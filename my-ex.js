@@ -50,11 +50,11 @@
     };
     
     ext.del_cookie = function(name){
-        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
     }
     
     function delCookie(name) {
-        createCookie(name,"",-1);
+        document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
     }
     
     ext.del_all_cookies = function(name){
