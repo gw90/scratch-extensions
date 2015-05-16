@@ -29,7 +29,11 @@
     };
     
     ext.set_cookie = function(name, value) {
-        document.cookie=name+"="+value;
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+        document.cookie=name+"="+value+"expires=Thu, 18 Dec "+yyyy+" 12:00:00 UTC";
         //alert(name+"="+value);
     };
     
