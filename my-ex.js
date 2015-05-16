@@ -33,7 +33,7 @@
         var dd = today.getDate();
         var mm = today.getMonth()+1; //January is 0!
         var yyyy = today.getFullYear();
-        document.cookie=name+"="+value+"; expires=Thu, 24 Dec 2015 12:00:00 UTC;";
+        document.cookie=name+"="+value+"; expires=Thu, 18 Dec 2013 12:00:00 UTC;";
         //alert(name+"="+value);
     };
     
