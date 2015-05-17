@@ -59,7 +59,7 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('Useful Block Extension', descriptor, ext);
+    ScratchExtensions.register('Cookie', descriptor, ext);
     
     
 })({});
