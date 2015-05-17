@@ -80,7 +80,7 @@
             [' ', 'delete all cookies', 'del_all_cookies'],
             
         ],
-        url:'https://gw90.github.io/scratch-extensions/my-ex.js'
+        url:'http://gw90.github.io/My-Scratch-Extension/'
     };
 
     // Register the extension
