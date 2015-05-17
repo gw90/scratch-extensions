@@ -84,7 +84,7 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('Useful Block Extension', descriptor, ext);
+    ScratchExtensions.register('Useful Block Extension', descriptor, ext, {type: 'hid', vendor:1684, product:3});
     
     
 })({});
