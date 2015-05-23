@@ -51,11 +51,11 @@
     
     ext.del_cookie = function(name){
         document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    }
+    };
     
     function delCookie(name) {
         document.cookie = name+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    }
+    };
     
     ext.del_all_cookies = function(name){
         var cookies = document.cookie.split(";");
@@ -63,7 +63,7 @@
             delCookie(cookies[i].split("=")[0]);
         }
         //
-    }
+    };
 
     // Block and block menu descriptions
     var descriptor = {
