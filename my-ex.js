@@ -70,8 +70,8 @@
         blocks: [
             // Block type, block name, function name
             ['r', '%n ^ %n', 'power', 2, 3],
-            ['r', 'infinity', 'inf',],
-            ['r', 'negative infinity', 'neg_inf'],
+            ['r', 'infinity', 'inf', 'http://gw90.github.io/scratch-extension/'],
+            ['r', 'negative infinity', 'neg_inf', ],
             ['b', '%n is finite?', 'inf_b'],
             ['r', 'remainder of %n divided by %n', 'mod'],
             [' ', 'set cookie with name:%s and value:%s', 'set_cookie', 'hello', 'world'],
