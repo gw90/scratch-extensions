@@ -10,7 +10,10 @@
 
     ext.my_first_block = function(url) {
         // Code that gets executed when the block is run
-        xmlhttp=new XMLHttpRequest();
+        $.get("http://www.gregorywickham.com/", function(responseText) {
+            console.log(responseText);
+            return responseText;
+        });
         
     };
 
