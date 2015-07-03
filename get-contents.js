@@ -13,6 +13,7 @@
         console.log(url);
         $.get(url, function(responseText) {
             return responseText;
+            console.log(responseText)
         });
     };
 
