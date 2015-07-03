@@ -8,9 +8,9 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function(url) {
+    ext.get_contents = function(url) {
         // Code that gets executed when the block is run
-        console.log("anything");
+        console.log(url);
         $.get(url, function(responseText) {
             console.log(responseText);
             return responseText;
