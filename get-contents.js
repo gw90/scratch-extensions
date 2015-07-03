@@ -10,7 +10,7 @@
 
     ext.my_first_block = function(url) {
         // Code that gets executed when the block is run
-        $.get("http://www.gregorywickham.com/", function(responseText) {
+        $.get(url, function(responseText) {
             console.log(responseText);
             return responseText;
         });
