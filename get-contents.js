@@ -13,9 +13,10 @@
         console.log(url);
         $.get(url, function(responseText) {
             console.log(responseText);
-            return responseText;
+            var contents = responseText;
+            
         });
-        
+        return contents;
     };
 
     // Block and block menu descriptions
