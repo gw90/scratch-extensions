@@ -12,8 +12,8 @@
         // Code that gets executed when the block is run
         console.log(url);
         $.get(url, function(responseText) {
-            return responseText;
             console.log(responseText)
+            return responseText;
         });
     };
 
