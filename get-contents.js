@@ -12,18 +12,15 @@
         // Code that gets executed when the block is run
         console.log(url);
         $.get(url, function(responseText) {
-            var contents = responseText;
-            console.log(responseText);
+            return responseText;
         });
-        console.log(contents)
-        return contents;
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'contents of %s', 'get_contents', 'https://scratch.mit.edu/',],
+            ['r', 'contents of %s', 'get_contents', 'https://scratch.mit.edu/'],
         ]
     };
 
