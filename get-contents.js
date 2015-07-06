@@ -11,6 +11,7 @@
     ext.get_contents = function(url) {
         // Code that gets executed when the block is run
         console.log(url);
+        //can't be crossdomain
         $.get(url, function(responseText) {
             console.log(responseText)
             return responseText;
