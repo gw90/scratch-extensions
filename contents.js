@@ -19,7 +19,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'contents of http://%s', 'get-contents', 'scratch.mit.edu'],
+            ['r', 'contents of http:// %s', 'get-contents', 'scratch.mit.edu'],
         ]
     };
 
