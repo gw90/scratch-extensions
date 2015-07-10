@@ -304,8 +304,8 @@
 
     ext.get_contents = function(url) {
         // Code that gets executed when the block is run
-        console.log(file_get_contents(url));
-        return file_get_contents(url);
+        var none = file_get_contents(url);
+        return none;
     };
 
     // Block and block menu descriptions
