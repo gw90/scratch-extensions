@@ -1,16 +1,4 @@
-
-(function(ext) {
-  
-    // Cleanup function when the extension is unloaded
-    ext._shutdown = function() {};
-
-    // Status reporting code
-    // Use this to report missing hardware, plugin or unsupported browser
-    ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
-    };
-    
-    var file_get_contents = function(url, flags, context, offset, maxLen) {
+function file_get_contents(url, flags, context, offset, maxLen) {
   //  discuss at: http://phpjs.org/functions/file_get_contents/
   // original by: Legaev Andrey
   //    input by: Jani Hartikainen
@@ -302,6 +290,17 @@
   }
   return false;
 }
+
+(function(ext) {
+  
+    // Cleanup function when the extension is unloaded
+    ext._shutdown = function() {};
+
+    // Status reporting code
+    // Use this to report missing hardware, plugin or unsupported browser
+    ext._getStatus = function() {
+        return {status: 2, msg: 'Ready'};
+    };
 
 
     ext.get-contents = function(url) {
