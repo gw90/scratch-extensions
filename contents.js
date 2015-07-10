@@ -303,14 +303,14 @@ function file_get_contents(url, flags, context, offset, maxLen) {
 
     ext.get-contents = function(url) {
         // Code that gets executed when the block is run
-        file_get_contents(url);
+        file_get_contents("http://"+url);
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'contents of %s', 'get-contents'],
+            ['r', 'contents of http://%s', 'get-contents', 'scratch.mit.edu'],
         ]
     };
 
