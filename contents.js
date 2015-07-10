@@ -1,4 +1,16 @@
-function file_get_contents(url, flags, context, offset, maxLen) {
+
+(function(ext) {
+  
+    // Cleanup function when the extension is unloaded
+    ext._shutdown = function() {};
+
+    // Status reporting code
+    // Use this to report missing hardware, plugin or unsupported browser
+    ext._getStatus = function() {
+        return {status: 2, msg: 'Ready'};
+    };
+    
+    function file_get_contents(url, flags, context, offset, maxLen) {
   //  discuss at: http://phpjs.org/functions/file_get_contents/
   // original by: Legaev Andrey
   //    input by: Jani Hartikainen
@@ -291,15 +303,6 @@ function file_get_contents(url, flags, context, offset, maxLen) {
   return false;
 }
 
-(function(ext) {
-    // Cleanup function when the extension is unloaded
-    ext._shutdown = function() {};
-
-    // Status reporting code
-    // Use this to report missing hardware, plugin or unsupported browser
-    ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
-    };
 
     ext.get-contents = function(url) {
         // Code that gets executed when the block is run
