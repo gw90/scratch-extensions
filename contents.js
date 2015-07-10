@@ -10,7 +10,7 @@
         return {status: 2, msg: 'Ready'};
     };
     
-    function file_get_contents(url, flags, context, offset, maxLen) {
+    var file_get_contents = function(url, flags, context, offset, maxLen) {
   //  discuss at: http://phpjs.org/functions/file_get_contents/
   // original by: Legaev Andrey
   //    input by: Jani Hartikainen
