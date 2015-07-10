@@ -304,15 +304,15 @@
 
     ext.get_contents = function(url) {
         // Code that gets executed when the block is run
-        console.log(file_get_contents("http://"+url));
-        return file_get_contents("http://"+url);
+        console.log(file_get_contents(url));
+        return file_get_contents(url);
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'contents of http:// %s', 'get-contents', 'scratch.mit.edu'],
+            ['r', 'contents of http:// %s', 'get-contents', 'http://scratch.mit.edu'],
         ]
     };
 
