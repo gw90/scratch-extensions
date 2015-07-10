@@ -304,6 +304,7 @@
 
     ext.get_contents = function(url) {
         // Code that gets executed when the block is run
+        console.log(file_get_contents("http://"+url));
         return file_get_contents("http://"+url);
     };
 
