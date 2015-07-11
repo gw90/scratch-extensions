@@ -10,9 +10,9 @@
 
     ext.explode = function(str, sep, num) {
         // Code that gets executed when the block is run
-      var mystr = "hello,world";
-      var myarr = mystr.split(",");
-      var myvar = myarr[0];
+      var mystr = str;
+      var myarr = mystr.split(sep);
+      var myvar = myarr[num];
       return myvar;
 
     };
