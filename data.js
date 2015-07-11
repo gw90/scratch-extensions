@@ -21,7 +21,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            [' ', 'explode %s for %s return %n', 'explode', "hello,world", ",", 1],
+            ['r', 'explode %s for %s return %n', 'explode', "hello,world", ",", 1],
         ]
     };
 
