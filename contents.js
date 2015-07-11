@@ -304,15 +304,14 @@
 
     ext.get_contents = function(url) {
         // Code that gets executed when the block is run
-        var none = file_get_contents(url);
-        return none;
+        alert(file_get_contents(url));
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'contents of http:// %s', 'get-contents', 'http://scratch.mit.edu'],
+            [' ', 'contents of http:// %s', 'get-contents', 'http://scratch.mit.edu'],
         ]
     };
 
