@@ -26,5 +26,5 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('My first extension', descriptor, ext);
+    ScratchExtensions.register('Data Blocks', descriptor, ext);
 })({});
